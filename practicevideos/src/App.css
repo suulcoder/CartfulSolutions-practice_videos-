@@ -1,13 +1,35 @@
-.App {
-  background-color: black;
+body {
+ background-color: aquamarine; 
 }
 
-.box {
-  background: pink;
-  width: 300px;
+p {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  line-height-step: 1.4;
+  width: 500px;
+  color: white;
+}
 
-  margin: 100px;
-  border: 10px solid red;
-  padding: 500px;
+.box-purple {
+  background: rebeccapurple;
+  float: left;
+}
 
+
+.box-red {
+  background: red;
+  float: left;
+  clear: both;
+}
+
+
+.box-blue {
+  background: blue;
+  float: left;
+}
+
+img {
+  float: left; /*imporant for put text and img together*/
+  width: 200px;
+  height: 200px;
 }
