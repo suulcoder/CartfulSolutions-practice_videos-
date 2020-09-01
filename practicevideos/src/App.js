@@ -26,9 +26,6 @@ function App() {
       <div className="box-blue">
         <img src={logo} className="App-logo" alt="logo" />
       </div>
-      <div className="box-purple">
-        <img src={logo} className="App-logo" alt="logo" />
-      </div>
     </div>
   );
 }

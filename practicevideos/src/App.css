@@ -12,6 +12,9 @@ p {
   margin: 50px;
   margin-left: auto;
   margin-right: auto;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
 }
 
 .box-red {
