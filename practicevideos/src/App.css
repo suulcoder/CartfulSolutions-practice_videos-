@@ -2,9 +2,35 @@ body {
  background-color: aquamarine; 
 }
 
-p::before {
-  content: 'hello';
-  background: red;
+p{
+  margin-top: 100px;
+}
+
+a[data-tool-tip]{
+  position: relative;
+}
+
+a[data-tool-tip]::after {
+  content: attr(data-tool-tip);
+  display: block;
+  position: absolute;
+  background-color: gray;
+  padding: 1em 3em;
+  color: white;
+  border-radius: 5px;
+  font-size: .8em;
+  bottom: 100%;
+  left: 0;
+  white-space: nowrap;
+  transform: scale(0);
+  transition: 
+    transform ease-out 150ms,
+    bottom ease-out 150ms;
+}
+
+a[data-tool-tip]:hover::after {
+  transform: scale(1);
+  bottom: 100%;
 }
 
 p::after {
@@ -57,4 +83,35 @@ img {
 .btn:hover{
   background: darkblue;
   color: white;
+}
+
+.section {
+  position: relative;
+}
+
+.section::before {
+  counter-increment: counter-name;
+  content: counter(counter-name);
+  position: absolute;
+  left: 2.5em;
+  background: white;
+  padding: .5em;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  color: black;
+}
+
+.counters ol{
+  counter-reset: ordered-list;
+  list-style: none;
+}
+
+.counters li::before {
+  counter-increment: ordered-list;
+  content: 'list item ' counter(ordered-list)
 }
