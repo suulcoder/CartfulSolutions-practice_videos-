@@ -1,0 +1,13 @@
+.App {
+  background-color: black;
+}
+
+.box {
+  background: pink;
+  width: 300px;
+
+  margin: 100px;
+  border: 10px solid red;
+  padding: 500px;
+
+}
