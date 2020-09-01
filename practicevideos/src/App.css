@@ -2,28 +2,24 @@ body {
  background-color: aquamarine; 
 }
 
-p {
-  margin-top: 0px;
-  margin-bottom: 15px;
-  line-height-step: 1.4;
-  width: 500px;
-  color: white;
-}
-
 .box-purple {
   background: rebeccapurple;
   float: left;
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 .box-red {
   background: red;
+  padding: 50px;
   float: left;
   clear: both;
 }
 
 
 .box-blue {
+  margin: 50px;
   background: blue;
   float: left;
 }
