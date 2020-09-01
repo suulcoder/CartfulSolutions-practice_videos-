@@ -2,8 +2,17 @@ body {
  background-color: aquamarine; 
 }
 
-p {
-  outline: 3px solid red;
+p::before {
+  content: 'hello';
+  background: red;
+}
+
+p::after {
+  content: '';
+  background: red;
+  display: block;
+  width: 10px;
+  height: 10px;
 }
 
 .box-purple {
