@@ -5,6 +5,12 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <p>
+        this is an example paragraph jsdfljsñjdfñajsñdhfshdfñhñahñahfñhafhañfhañhf
+        <a className="btn" href="link">
+          this is a link
+        </a>
+      </p>
       <div className="box-purple">
         <img src={logo} className="App-logo" alt="logo" />
       </div>

@@ -2,6 +2,10 @@ body {
  background-color: aquamarine; 
 }
 
+p {
+  outline: 3px solid red;
+}
+
 .box-purple {
   background: rebeccapurple;
   float: left;
@@ -28,4 +32,18 @@ img {
   float: left; /*imporant for put text and img together*/
   width: 200px;
   height: 200px;
+}
+
+.btn {
+  display: inline-block;
+  background: lightblue;
+  color:black;
+  padding: 25px 75px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.btn:hover{
+  background: darkblue;
+  color: white;
 }
