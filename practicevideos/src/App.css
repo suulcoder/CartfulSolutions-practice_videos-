@@ -41,6 +41,13 @@ p::after {
   height: 10px;
 }
 
+.boxes{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-content: center;
+}
+
 .box-purple {
   background: rebeccapurple;
   margin: 50px;
@@ -148,4 +155,10 @@ img {
 .counters li::before {
   counter-increment: ordered-list;
   content: 'list item ' counter(ordered-list)
+}
+
+@media (min-width: 600px) {     /*more than 600px will follow this rules*/
+  .box-purple {
+    background: green;
+  }
 }

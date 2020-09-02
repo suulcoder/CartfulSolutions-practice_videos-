@@ -11,21 +11,24 @@ function App() {
           this is a link
         </a>
       </p>
-      <div className="box-purple">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="boxes">
+        <div className="box-purple">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
+        <div className="box-red">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
+        <div className="box-blue">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
+        <div className="box-red">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
+        <div className="box-blue">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
       </div>
-      <div className="box-red">
-        <img src={logo} className="App-logo" alt="logo" />
-      </div>
-      <div className="box-blue">
-        <img src={logo} className="App-logo" alt="logo" />
-      </div>
-      <div className="box-red">
-        <img src={logo} className="App-logo" alt="logo" />
-      </div>
-      <div className="box-blue">
-        <img src={logo} className="App-logo" alt="logo" />
-      </div>
+      
       <div className="counters">
        <ol>
          <li> one </li>
